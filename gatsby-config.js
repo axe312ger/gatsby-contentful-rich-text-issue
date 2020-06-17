@@ -27,6 +27,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `549ocx74sqir`,
+        // Never store the access token in your source code. Its done here to simplify understanding the rich text issue!
+        accessToken: `WTyDeu77G9A8VBw9LOC83JS2h-EKJwTeL_k66YTAZco`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
